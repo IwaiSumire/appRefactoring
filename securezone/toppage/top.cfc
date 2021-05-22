@@ -1,6 +1,8 @@
 <component>
     <cffunction name="toplist" access="remote" returntype="query">
 
+        
+
         <cfscript>
             nowMonthListQry = new query();
             nowMonthListQry.setDatasource("sample");

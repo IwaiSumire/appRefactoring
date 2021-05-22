@@ -1,3 +1,4 @@
+<!---
 <cfquery datasource="sample" name="show">
     select *
     from suggestion,employee,result,type,department
@@ -12,16 +13,24 @@
     and
     "suggestion_id" = #suggestion_id#
 </cfquery>
+--->
+<cfinvoke  method="show" component="showing" returnvariable="showDetails">
+</cfinvoke>
 <html>
-    <head><title>詳細画面</title></head>
+    <head><title>詳細画面</title>
+        <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../js/top.js"></script>
+        <script type="text/javascript" src="../../js/header.js"></script>
+        <link rel="stylesheet" href="../../style/top.css">
+    </head>
     <body>
         
-        <cfinclude  template="header.cfm">
+        <cfinclude  template="../header.cfm">
 
-        <cfoutput query="show">
+        <cfoutput query="showDetails">
 
             <h2>詳細内容</h2>
-            <table border="2">
+            <table border="2" width="1000px">
 
                 <tr><th>タイトル</th>
                     <td>#suggestion_title#</td></tr>

@@ -43,7 +43,7 @@
                 <button type="button" class="btn">新規登録はこちら</button>
             </a>
 
-            <a href="./logout.cfm">
+            <a href="http://localhost:8500/appRefactoring/securezone/logout.cfm">
                 <button type="button" class="btn">ログアウト</button>
             </a>
             <a href="./usershow.cfm">

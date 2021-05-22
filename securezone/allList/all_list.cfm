@@ -23,7 +23,7 @@
                 <input type="submit" value="検索" id="search" class="inli">
                 <p class="tooltip">検索ができます。</p>
             </form>
-            
+
             <table border="3" class="tab" width="1000px" ALIGN="left">
                 <tr>
                     <td><b>タイトル</b></td>
@@ -45,7 +45,7 @@
 
                         <td class="tbbtn">
 
-                            <a href="./show.cfm?suggestion_id=#suggestion_id#">
+                            <a href="../show/show.cfm?suggestion_id=#suggestion_id#">
                                 <button type="button">詳細/承認</button>
                             </a>
                         </td>

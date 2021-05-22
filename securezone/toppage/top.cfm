@@ -33,8 +33,8 @@
                         </form>
 
                         
-                        <a href="./pdf.cfm">
-                            <button type="button" class="pdfbtn">PDF出力</button>
+                        <a href="../documents/pdf.cfm">
+                            <button type="button" class="pdfbtn">今月分PDF出力</button>
                         </a>
                         <a href="./excel.cfm">
                             <button type="button" class="pdfbtn">Excel出力</button>
@@ -64,7 +64,7 @@
 
                                     <td class="tbbtn">
 
-                                        <a href="./show.cfm?suggestion_id=#suggestion_id#">
+                                        <a href="../show/show.cfm?suggestion_id=#suggestion_id#">
                                             <button type="button">詳細/承認</button>
                                         </a>
                                     </td>

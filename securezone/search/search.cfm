@@ -45,7 +45,7 @@
 
                         <td class="tbbtn">
 
-                            <a href="./show.cfm?suggestion_id=#suggestion_id#">
+                            <a href="../show/show.cfm?suggestion_id=#suggestion_id#">
                                 <button type="button">詳細/承認</button>
                             </a>
                         </td>
