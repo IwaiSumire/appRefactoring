@@ -1,6 +1,6 @@
 
 <cfset MaxRows=20>
-    <cfparam name="top" default="1">
+<cfparam name="top" default="1">
 
     <cfinvoke method="toplist" component="top" returnvariable="NowMonthList">
     </cfinvoke>
@@ -19,41 +19,7 @@
     
                 </head>
 
-                <header class="head">
-
-                    <cfoutput>
-                        <br>
-                        <h1>株式会社岩井 改善提案管理アプリ</h1>
-                        <h3>現在のログインユーザー：#cookie.cemployee_name#さん</h3>
-            
-                    </cfoutput>
-            
-                </header>
-            
-                <nav>
-            
-                    <div class="headbtn">
-            
-                        <a href="./all_list.cfm">
-                            <button type="button" class="btn">過去の全てのリスト</button>
-                        </a>
-            
-                        <a href="./newImp.cfm">
-                            <button type="button" class="btn">新規登録はこちら</button>
-                        </a>
-                        <a href="./usershow.cfm">
-                            <button type="button" class="btn">登録社員一覧はこちら</button>
-                        </a>
-                        <a href="./chart.cfm">
-                            <button type="button" class="btn">比較グラフはこちら</button>
-                        </a>
-                        <a href="./logout.cfm">
-                            <button type="button" class="btn">ログアウト</button>
-                        </a>
-            
-                    </div>
-            
-                </nav>
+               <cfinclude template="../header.cfm">
                 
 
                 <div class="sabtitle">
@@ -128,7 +94,7 @@
 
 
                         <cfset NextStart=top + MaxRows>
-                            <cfset Return=top - MaxRows>
+                            <cfset Return =top - MaxRows>
 
 
                                 <br>

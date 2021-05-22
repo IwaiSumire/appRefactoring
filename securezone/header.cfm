@@ -8,7 +8,6 @@
     <title>ヘッダー</title>
 
     <link rel="stylesheet" href="../style/header.css?v=2">
-
     <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../js/header.js"></script>
     
@@ -32,7 +31,11 @@
 
         <div class="headbtn">
 
-            <a href="./all_list.cfm">
+            <a href="http://localhost:8500/appRefactoring/securezone/toppage/top.cfm">
+                <button type="button" class="btn">TOPページ</button>
+            </a>
+
+            <a href="http://localhost:8500/appRefactoring/securezone/allList/all_list.cfm">
                 <button type="button" class="btn">過去の全てのリスト</button>
             </a>
 
