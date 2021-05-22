@@ -1,16 +1,29 @@
+
 <cfset MaxRows=20>
     <cfparam name="top" default="1">
-        <!---変数の存在を確認し、存在していれば設定する--->
-        <cfquery datasource="sample" name="toplist">
-            select *
-            from suggestion,employee,result
-            where
-            suggestion.login_id=employee.login_id
-            and
-            suggestion.result_id=result.result_id
-            and
-            date_part('month',now())=date_part('month',suggestion.filingdate)
-        </cfquery>
+
+    <!--- <cfscript>
+
+        topList = new query();
+        topList.setDatasource("sample");
+    
+        topList.setSQL("
+        select *
+        from suggestion,employee,result
+        where
+        suggestion.login_id=employee.login_id
+        and
+        suggestion.result_id=result.result_id
+        and
+        date_part('month',now())=date_part('month',suggestion.filingdate)
+    ");
+
+    NowMonthList= topList.execute().getresult();
+
+    </cfscript> --->
+
+    <cfinvoke method="toplist" component="top" returnvariable="NowMonthList">
+    </cfinvoke>
 
         <html>
 
@@ -18,15 +31,13 @@
                 <head>
                     <title>トップページ</title>
     
-                    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-                    <script type="text/javascript" src="../js/top.js"></script>
-                    <script type="text/javascript" src="../js/header.js"></script>
-                    <link rel="stylesheet" href="../style/top.css">
+                    <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+                    <script type="text/javascript" src="../../js/top.js"></script>
+                    <script type="text/javascript" src="../../js/header.js"></script>
+                    <link rel="stylesheet" href="../../style/top.css">
     
     
                 </head>
-
-             
 
                 <header class="head">
 
@@ -86,8 +97,6 @@
                     </nav>
                 </div>
 
-
-                
                         <table border="3" class="tab" width="1000px" ALIGN="left">
                             <tr>
                                 <td><b>タイトル</b></td>
@@ -99,7 +108,7 @@
                                 <td><b> 消去 </b></td>
                             </tr>
 
-                            <cfoutput query="toplist" startrow="#top#" MAXROWS="#MaxRows#">
+                            <cfoutput query="NowMonthList" startrow="#top#" MAXROWS="#MaxRows#">
 
                                 <tr>
                                     <td>#suggestion_title#</td>
@@ -162,3 +171,4 @@
             </body>
 
         </html>
+

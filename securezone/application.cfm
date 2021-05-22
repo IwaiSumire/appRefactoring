@@ -1,4 +1,4 @@
-
+<!---
 <cfapplication name="secure" clientmanagement="yes" sessionmanagement="Yes">
 <!---clientmanagementsessionクライアント変数を有効にする--->
 <!---sessionmanagementセッション変数を有効にする--->
@@ -8,3 +8,4 @@
 </cfif>
 
 
+--->

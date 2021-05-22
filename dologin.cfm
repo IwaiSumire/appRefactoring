@@ -1,4 +1,5 @@
 
+<!---
 <cfif (form.login_id is "") or (form.login_pass is "")>
     <meta http-equiv="refresh" content="0;url=logintop.cfm?nullNotLogin=yes">
 </cfif>
@@ -31,3 +32,4 @@ and '#login_pass#' = login_pass
 <cfif dologin.recordcount EQ 0><!---EQは＝と一緒ね--->
     <meta http-equiv="refresh" content="0;url=logintop.cfm?badLogin=yes">
 </cfif>
+--->
