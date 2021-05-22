@@ -1,6 +1,6 @@
 <cfset MaxRows=20>
 <cfparam name="top" default="1">
-<cfinvoke method="allList" component="all_list" returnvariable="allList">
+<cfinvoke method="search" component="searching" returnvariable="searchResult">
 </cfinvoke>
     
     <html>
@@ -15,7 +15,7 @@
 
         <body>
             <cfinclude template="../header.cfm">
-        <h2>過去のすべての一覧表<h2>
+        <h2>検索条件に一致したもの一覧<h2>
 
             <form action="../search/search.cfm" method="post" class="margin">
                 <span class="search">条件に一致するものを検索する</span>
@@ -35,7 +35,7 @@
                     <td><b> 消去 </b></td>
                 </tr>
 
-                <cfoutput query="allList" startrow="#top#" MAXROWS="#MaxRows#">
+                <cfoutput query="searchResult" startrow="#top#" MAXROWS="#MaxRows#">
 
                     <tr>
                         <td>#suggestion_title#</td>
@@ -58,9 +58,7 @@
 
 
                             <a href="./delete.cfm?suggestion_id=#suggestion_id#">
-
                                 <button type="button" class="deletebtn">消去</button>
-
                             </a>
 
                         </td>

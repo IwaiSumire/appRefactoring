@@ -25,7 +25,7 @@
                 <div class="sabtitle">
                 <h2>今月の改善提案一覧表<h2>
 
-                        <form action="search.cfm" method="post" class="margin">
+                        <form action="../search/search.cfm" method="post" class="margin">
                             <span class="search">条件に一致するものを検索する</span>
                             <input type="search" name="search" placeholder="キーワードを入力">
                             <input type="submit" value="検索" id="search" class="inli">
@@ -117,4 +117,3 @@
             </body>
 
         </html>
-
