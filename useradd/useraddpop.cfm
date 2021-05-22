@@ -15,5 +15,5 @@
 </html>
 
 <body>
-    <meta http-equiv="refresh" content="0;url=../login/logintop.cfm"><!---ログインする→toppageに行く--->
+    <meta http-equiv="refresh" content="0;url=../login/logintop.cfm">
 </body>

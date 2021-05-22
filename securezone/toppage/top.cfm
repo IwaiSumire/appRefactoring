@@ -2,26 +2,6 @@
 <cfset MaxRows=20>
     <cfparam name="top" default="1">
 
-    <!--- <cfscript>
-
-        topList = new query();
-        topList.setDatasource("sample");
-    
-        topList.setSQL("
-        select *
-        from suggestion,employee,result
-        where
-        suggestion.login_id=employee.login_id
-        and
-        suggestion.result_id=result.result_id
-        and
-        date_part('month',now())=date_part('month',suggestion.filingdate)
-    ");
-
-    NowMonthList= topList.execute().getresult();
-
-    </cfscript> --->
-
     <cfinvoke method="toplist" component="top" returnvariable="NowMonthList">
     </cfinvoke>
 
