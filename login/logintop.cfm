@@ -28,7 +28,7 @@
 
 <head>
   <title>ログインフォーム</title>
-  <link rel="stylesheet" type="text/css" href="style/logintop.css">
+  <link rel="stylesheet" type="text/css" href="../style/logintop.css">
   <script>
     $(document).ready(function (e) {
       $('h6').on('click', function () {
