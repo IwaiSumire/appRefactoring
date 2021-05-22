@@ -1,0 +1,38 @@
+.slides{
+    margin: 100px auto;
+    width: 80%;
+}
+.slides img{
+    
+    width: 50%;
+    margin: 0 auto;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+.title {
+
+    height: 200px;
+    width: 100%;
+    background-color: black;
+
+}
+
+h2 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

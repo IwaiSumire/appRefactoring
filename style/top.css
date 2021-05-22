@@ -1,0 +1,173 @@
+h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+body {
+    background-color:papayawhip;
+    }
+    
+    .box2 {
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        font-weight: bold;
+        color: #6091d3;/*文字色*/
+        background: #FFF;
+        border: solid 3px #6091d3;/*線*/
+        border-radius: 10px;/*角の丸み*/
+    }
+    .box2 p {
+        margin: 0; 
+        padding: 0;
+}
+
+
+.search {
+    font-size: small;
+}
+
+.hr {
+    border-style:dashed;
+}
+
+.btn {
+    margin : 0 auto;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #00aaff;
+    box-shadow: 0 4px 0 #0088cc;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.pdfbtn {
+    margin-top: 10px;
+}
+/* ふきだし */
+
+
+.tooltip {
+    
+    width:130px;
+    padding:10px;
+    font-size:9px;
+    background-color:#666;
+    color:#fff;
+    display: inline-block;
+    margin-left: 30px;
+  
+}
+
+.margin {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.tooltip:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position:fixed;
+  border-color: rgba(102, 102, 102, 0);
+  border-right-color: #5e5e5e;
+  border-width: 8px;
+  margin-top: -8px;
+}
+
+table {
+    margin-top: 30px;
+    overflow: hidden;
+    margin-left: 30px;
+   
+}
+
+.tab button { display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    text-align: center;
+    
+
+}
+
+.tab button :active {
+    /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+
+}
+
+.tbbtn {
+    text-align: center;
+
+}
+
+.deletepop {
+    color: red;
+    float: left;
+    right: 100px;
+    font-size: 120%;
+}
+
+.nexrbtn {
+    clear: left;
+    margin-top: 100px;
+}
+
+
+/* これ以降はヘッダー */
+
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+header {
+    background-color: orange;
+    height: 150px;
+}
+
+header * {
+    margin-left: 30px;
+}
+
+nav {
+    background-color:coral;
+    height: 100px;
+}
+
+nav * {
+    margin-left: 15px;
+    padding-top: 30px;
+}
+
+
+.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .headbtn {
+      text-align: center;
+  }
+
+  .sabtitle {
+      margin-left: 30px;
+      margin-top: 10px;
+  }
