@@ -35,8 +35,8 @@
                         <a href="../documents/pdf.cfm">
                             <button type="button" class="pdfbtn">今月分PDF出力</button>
                         </a>
-                        <a href="./excel.cfm">
-                            <button type="button" class="pdfbtn">Excel出力</button>
+                        <a href="../documents/chart.cfm">
+                            <button type="button" class="pdfbtn">今年のランキング</button>
                         </a>
 
                     </nav>

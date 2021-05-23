@@ -1,3 +1,4 @@
+<!---
 <cfquery datasource="sample" name="excel">
     select *
     from suggestion
@@ -22,3 +23,5 @@
     query = "excel"
     sheetname = "text"
     autosize = "true" >
+
+--->

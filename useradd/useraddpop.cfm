@@ -5,9 +5,8 @@
 
         <script>
             
-            window.onload = function () {
-            alert('ユーザの登録が完了しました。\n
-            登録したメールアドレスに完了の連絡をしましたのでご確認ください。');
+            function load () {
+                alert("ユーザ登録が完了しました。");
             };
 
         </script>
@@ -15,6 +14,6 @@
     </head>
 </html>
 
-<body>
+<body onload="load()">
     <meta http-equiv="refresh" content="0;url=../login/logintop.cfm">
 </body>

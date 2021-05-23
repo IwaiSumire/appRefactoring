@@ -50,7 +50,7 @@
   </form>
 </body>
 <footer>
-  <h5>click! <a href="./useradd.cfm">ユーザ新規</a></h5>
+  <h5>click! <a href="../useradd/useradd.cfm">ユーザ新規</a></h5>
   <h5>click! <a href="./description.html">アプリの説明</a></h5>
 
 </footer>

@@ -5,9 +5,8 @@
 
         <script>
             
-            window.onload = function () {
-            alert('業務改善提案が無事に提出されました。\n
-            改善活動にご協力頂きありがとうございました。');
+            function load () {
+                alert("ご提案を頂きありがとうございました。");
             };
 
         </script>
@@ -15,6 +14,8 @@
     </head>
 </html>
 
-<body>
+<body onload="load()">
+    
     <meta http-equiv="refresh" content="0;url=../toppage/top.cfm">
+    
 </body>

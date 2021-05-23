@@ -1,20 +1,5 @@
-<cfquery datasource="sample" name="usershow">
-  select *
-    from
-	employee
-	 join
-	department
-	on
-	employee.department_id = department.department_id
-	 join
-	authority
-	on
-	employee.authority_id = authority.authority_id
-    order by
-    employee.login_id
-</cfquery>
-
-
+<cfinvoke  method="userList" component="userListing" returnvariable="userList">
+</cfinvoke>
 <!DOCTYPE html>
 <html lang="ja">
         
@@ -46,7 +31,7 @@
     </thead>
             </tr>
         
-                <cfoutput query="usershow">
+                <cfoutput query="userList">
 
                     <tr>
                         <td>#login_id#</td>
