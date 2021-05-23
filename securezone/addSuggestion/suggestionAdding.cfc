@@ -34,7 +34,6 @@
             suggestionAddQry.addparam(name="filingdate", value="#form.filingdate#", cfsqltype="CF_SQL_DATE");
             suggestionAddQry.addparam(name="result_id", value="1", cfsqltype="cf_sql_numeric");
             suggestionAddQry.addparam(name="login_id", value="#form.login_id#", cfsqltype="cf_sql_numeric");
-
             suggestionAddQry.execute();
 
             location("suggestionAddPop.cfm", "false", "301");

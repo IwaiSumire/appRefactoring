@@ -1,4 +1,3 @@
-
 <cfset MaxRows=20>
 <cfparam name="top" default="1">
 
@@ -68,7 +67,7 @@
                                         </a>
                                     </td>
                                     <td class="tbbtn">
-                                        <a href="./update.cfm?suggestion_id=#suggestion_id#">
+                                        <a href="../update/update.cfm?suggestion_id=#suggestion_id#">
                                             <button type="button">変更</button>
                                         </a>
                                     </td>
