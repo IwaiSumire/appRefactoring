@@ -12,24 +12,26 @@
 	employee.authority_id = authority.authority_id
     order by
     employee.login_id
-    </cfquery>
+</cfquery>
 
 
 <!DOCTYPE html>
 <html lang="ja">
         
         <title>登録ユーザ確認</title>
-    
-        <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="../js/usershow.js"></script>
+        <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../js/top.js"></script>
+        <script type="text/javascript" src="../../js/header.js"></script>
+        <script type="text/javascript" src="../../js/usershow.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
-        <link rel="stylesheet" href="../style/usershow.css?v=2">
+        <link rel="stylesheet" href="../../style/usershow.css">
+        <link rel="stylesheet" href="../../style/top.css">
 </body>
 
 </html>
 
 
-
+<cfinclude  template="../header.cfm">
 
 <table border="3" class="tablesorter" id="myTable" width="1000px">
 

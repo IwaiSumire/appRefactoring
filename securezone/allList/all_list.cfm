@@ -4,7 +4,9 @@
 </cfinvoke>
     
     <html>
+        <body>
         <head>
+            
             <title>トップページ</title>
             <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
             <script type="text/javascript" src="../../js/top.js"></script>
@@ -13,8 +15,9 @@
             <link rel="stylesheet" href="../../style/all_list.css">
         </head>
 
-        <body>
+       
             <cfinclude template="../header.cfm">
+            <div class="sabtitle">
         <h2>過去のすべての一覧表<h2>
 
             <form action="../search/search.cfm" method="post" class="margin">
@@ -23,6 +26,7 @@
                 <input type="submit" value="検索" id="search" class="inli">
                 <p class="tooltip">検索ができます。</p>
             </form>
+        </div>
 
             <table border="3" class="tab" width="1000px" ALIGN="left">
                 <tr>

@@ -33,7 +33,7 @@
         </cfscript>
 
         <cfif isDefined("form.action") and form.action is "useradd">
-            <cfinvoke  method="useradd" component="useradding" returnvariable="message">
+            <cfinvoke  method="useradd" component="useradding">
                 <cfinvokeargument name="employee_name" value="#form.employee_name#">
                 <cfinvokeargument name="department_id" value="#form.department_id#">
                 <cfinvokeargument name="login_id" value="#form.login_id#">

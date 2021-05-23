@@ -15,14 +15,17 @@
 
         <body>
             <cfinclude template="../header.cfm">
-        <h2>検索条件に一致したもの一覧<h2>
-
+            <div class="sabtitle">
+        <cfoutput>
+        <h2>検索条件 【#form.search#】 に一致したもの一覧<h2>
+        </cfoutput>
             <form action="../search/search.cfm" method="post" class="margin">
                 <span class="search">条件に一致するものを検索する</span>
                 <input type="search" name="search" placeholder="キーワードを入力">
                 <input type="submit" value="検索" id="search" class="inli">
                 <p class="tooltip">検索ができます。</p>
             </form>
+        </div>
             
             <table border="3" class="tab" width="1000px" ALIGN="left">
                 <tr>

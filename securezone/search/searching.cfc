@@ -22,6 +22,7 @@
             employee.employee_name LIKE :search
             or
             employee.email LIKE :search
+            order by suggestion.filingdate desc, suggestion.suggestion_id desc
             ");
             searchResQry.addparam(name="search", value="%#form.search#%", cfsqltype="cf_sql_varchar");
         </cfscript>

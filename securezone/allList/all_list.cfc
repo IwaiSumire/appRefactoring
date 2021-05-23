@@ -11,7 +11,9 @@
             where
             suggestion.login_id=employee.login_id
             and
-            suggestion.result_id=result.result_id");
+            suggestion.result_id=result.result_id
+            order by suggestion.filingdate desc, suggestion.suggestion_id desc
+            ");
 
             allListQry.execute();
         </cfscript>

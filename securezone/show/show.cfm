@@ -1,33 +1,20 @@
-<!---
-<cfquery datasource="sample" name="show">
-    select *
-    from suggestion,employee,result,type,department
-    where
-    suggestion.login_id=employee.login_id
-    and
-    suggestion.result_id=result.result_id
-	and
-	suggestion.type_id = type.type_id
-	and
-	employee.department_id = department.department_id
-    and
-    "suggestion_id" = #suggestion_id#
-</cfquery>
---->
 <cfinvoke  method="show" component="showing" returnvariable="showDetails">
 </cfinvoke>
 <html>
+    
     <head><title>詳細画面</title>
         <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="../../js/top.js"></script>
         <script type="text/javascript" src="../../js/header.js"></script>
         <link rel="stylesheet" href="../../style/top.css">
+        <link rel="stylesheet" href="../../style/usershow.css">
     </head>
     <body>
         
         <cfinclude  template="../header.cfm">
 
         <cfoutput query="showDetails">
+            <div class="sugges">
 
             <h2>詳細内容</h2>
             <table border="2" width="1000px">
@@ -52,7 +39,8 @@
             
         <br>
 
-        
+
+       
        
         <spna><font color="red">提案者の上長のみ変更可</font></span>
         <form action="resultupdate.cfm" method="post">
@@ -65,12 +53,9 @@
         <button type="submit">送信</button>
 
         </form>
-    
 
-        <br>
-        <a href="./top.cfm">
-            <button type="button">TOPページに戻る</button>
-        </a>
+    </div>
+            
     </cfoutput>
     </body>
 </html>

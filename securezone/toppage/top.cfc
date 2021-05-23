@@ -15,7 +15,9 @@
             and
             suggestion.result_id=result.result_id
             and
-            date_part('month',now())=date_part('month',suggestion.filingdate)");
+            date_part('month',now())=date_part('month',suggestion.filingdate)
+            order by suggestion.filingdate desc, suggestion.suggestion_id desc
+            ");
 
             nowMonthListQry.execute();
         </cfscript>

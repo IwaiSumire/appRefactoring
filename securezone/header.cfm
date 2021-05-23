@@ -39,14 +39,14 @@
                 <button type="button" class="btn">過去の全てのリスト</button>
             </a>
 
-            <a href="./newImp.cfm">
+            <a href="http://localhost:8500/appRefactoring/securezone/addSuggestion/suggestionAdd.cfm">
                 <button type="button" class="btn">新規登録はこちら</button>
             </a>
 
             <a href="http://localhost:8500/appRefactoring/securezone/logout.cfm">
                 <button type="button" class="btn">ログアウト</button>
             </a>
-            <a href="./usershow.cfm">
+            <a href="http://localhost:8500/appRefactoring/securezone/userList/userList.cfm">
                 <button type="button" class="btn">登録社員一覧はこちら</button>
             </a>
 

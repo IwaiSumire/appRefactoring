@@ -64,19 +64,16 @@
 
                      addUserQry.execute();
 
+                     //メール送信
                      savecontent variable="mailBody" {
                         writeOutput( "#form.employee_name#様のユーザ登録が完了致しました。" );
                       };
-                      
-                      // Create and populate the mail object
                       mailService = new mail(
                         to = "#form.email#",
                         from = "sender@example.com",
                         subject = "業務改善提案アプリユーザ登録完了のお知らせ",
                         body = mailBody
                       );
-                      
-                      // Send
                       mailService.send();
 
                       location("useraddpop.cfm", "false", "301");

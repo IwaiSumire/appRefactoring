@@ -6,7 +6,6 @@
     </cfinvoke>
 
         <html>
-
             <body>
                 <head>
                     <title>トップページ</title>
